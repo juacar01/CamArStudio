@@ -1,0 +1,16 @@
+# Binaries and archives (must be published to GitHub Releases, not git tree)
+*.exe
+*.zip
+*.7z
+*.tar.gz
+*.msi
+
+# Temp and OS files
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
+
+# IDE and editors
+.vscode/
+.idea/
