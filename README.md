@@ -6,7 +6,7 @@
   ### Motor de Video en Vivo, Cámara Virtual & Retoque Facial con IA Acelerado por GPU
 
   [![Canal](https://img.shields.io/badge/Canal-Beta%20P%C3%BAblica-00E5FF?style=for-the-badge&logo=electron)](https://github.com/juacar01/CamArStudio/releases)
-  [![Versión Actual](https://img.shields.io/badge/Versi%C3%B3n-v0.1.10--beta-purple?style=for-the-badge&logo=rust)](https://github.com/juacar01/CamArStudio/releases/tag/v0.1.10-beta)
+  [![Versión Actual](https://img.shields.io/badge/Versi%C3%B3n-v0.1.10--beta-purple?style=for-the-badge&logo=rust)](https://github.com/juacar01/CamArStudio/releases)
   [![Plataforma](https://img.shields.io/badge/SO-Windows%2010%20%2F%2011%2064--bit-blue?style=for-the-badge&logo=windows)](https://github.com/juacar01/CamArStudio/releases)
   [![Aceleración](https://img.shields.io/badge/GPU-Direct3D%2011%20%7C%20HLSL-green?style=for-the-badge&logo=nvidia)](https://github.com/juacar01/CamArStudio)
 
@@ -17,33 +17,33 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/juacar01/CamArStudio/releases/latest"><b>🚀 Descargar Última Versión</b></a> •
+    <a href="https://mega.nz/file/edw20DAK#Hel9sZI2ronaLTrwm7VHq4hXUoH7kYvznh_2CcBsyRg"><b>🚀 Descargar Instalador (.exe)</b></a> •
+    <a href="https://mega.nz/file/mE5GVJwZ#fsqJ4LCwYs7g7mh6bqYq2UeYGFrUxgn3BqUQwKUzhxg"><b>📦 Descargar Portable (.zip)</b></a> •
     <a href="docs/INSTALL.md"><b>📖 Guía de Instalación</b></a> •
-    <a href="CHANGELOG.md"><b>📜 Notas de la Versión</b></a> •
-    <a href="https://github.com/juacar01/CamArStudio/issues"><b>🐛 Reportar Problema</b></a>
+    <a href="CHANGELOG.md"><b>📜 Notas de la Versión</b></a>
   </p>
 
 </div>
 
 ---
 
-## 📸 Previsualización
+## 📸 Previsualización de la Interfaz
 
 <div align="center">
-  <img src="assets/app_preview.png" alt="CamAr Studio Interface Preview" width="850" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+  <img src="assets/app_preview.png" alt="CamAr Studio Interface Preview" width="950" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
 </div>
 
 ---
 
-## ⚡ Enlaces Rápidos de Descarga
+## ⚡ Enlaces Oficiales de Descarga
 
-| Formato | Enlace Directo | Descripción |
-| :--- | :--- | :--- |
-| **🚀 Instalador Oficial (`.exe`)** | [**Descargar Instalador v0.1.10-beta**](https://github.com/juacar01/CamArStudio/releases/download/v0.1.10-beta/CamAr_Studio_v0.1.10-beta_Setup.exe) | Recomendado. Asistente con acceso directo y autodetección de GPU. |
-| **📦 Paquete Portable (`.zip`)** | [**Descargar Portable v0.1.10-beta**](https://github.com/juacar01/CamArStudio/releases/download/v0.1.10-beta/CamAr_Studio_v0.1.10-beta_Portable.zip) | No requiere instalación. Extraer y usar de inmediato. |
+| Formato | Servidor / Enlace de Descarga Directa | Nombre del Archivo | Descripción |
+| :--- | :--- | :--- | :--- |
+| **🚀 Instalador Oficial (`.exe`)** | [**Descargar desde Mega (Servidor Rápido)**](https://mega.nz/file/edw20DAK#Hel9sZI2ronaLTrwm7VHq4hXUoH7kYvznh_2CcBsyRg) | `CamAr-Studio-v0.1.10-beta-Setup.exe` | **Recomendado.** Asistente con acceso directo, registro de driver y autodetección de GPU. |
+| **📦 Paquete Portable (`.zip`)** | [**Descargar desde Mega (Servidor Rápido)**](https://mega.nz/file/mE5GVJwZ#fsqJ4LCwYs7g7mh6bqYq2UeYGFrUxgn3BqUQwKUzhxg) | `CamAr-Studio-v0.1.10-beta-Portable.zip` | No requiere instalación. Descomprimir en cualquier carpeta y ejecutar de inmediato. |
 
 > [!TIP]
-> Puedes consultar el archivo [`latest.json`](latest.json) para integraciones automáticas, bots o verificaciones de versión.
+> También puedes consultar el archivo de integración [`latest.json`](latest.json) para canales de actualización y bots de descarga.
 
 ---
 
@@ -71,8 +71,8 @@
 
 * **🎥 Compatibilidad Universal de Cámara Virtual:**
   - Emite directamente a cualquier programa que acepte webcam:
-    - **Streaming:** OBS Studio, Streamlabs OBS, vMix, XSplit.
-    - **Videollamadas:** Zoom, Discord, Google Meet, Microsoft Teams, Skype.
+    - **Streaming:** OBS Studio, Streamlabs Desktop, vMix, XSplit Broadcaster, Prism Live.
+    - **Videollamadas:** Zoom, Discord, Google Meet (Chrome / Edge / Firefox), Microsoft Teams, Skype.
 
 ---
 
@@ -89,17 +89,6 @@
 * **Procesador:** Intel Core i7 / AMD Ryzen 7 o superior.
 * **Memoria RAM:** 16 GB.
 * **Tarjeta Gráfica:** NVIDIA GeForce RTX 2060 / 3060 / 4060 o AMD Radeon RX 6600 o superior.
-
----
-
-## 🛡️ Verificación de Integridad (SHA-256)
-
-Para comprobar la autenticidad de los archivos descargados:
-
-| Archivo | Hash SHA-256 |
-| :--- | :--- |
-| `CamAr_Studio_v0.1.10-beta_Setup.exe` | *(Ver release oficial en GitHub)* |
-| `CamAr_Studio_v0.1.10-beta_Portable.zip` | *(Ver release oficial en GitHub)* |
 
 ---
 
