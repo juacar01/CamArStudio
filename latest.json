@@ -6,14 +6,14 @@
     "name":  "CamAr Studio v0.1.10",
     "downloads":  {
                       "installer":  {
-                                        "filename":  "CamAr_Studio_0.1.10_Setup.exe",
-                                        "url":  "https://github.com/juacar01/CamArStudio/releases/download/v0.1.10/CamAr_Studio_0.1.10_Setup.exe",
+                                        "filename":  "CamAr-Studio-v0.1.10-Setup.exe",
+                                        "url":  "https://github.com/juacar01/CamArStudio/releases/download/v0.1.10/CamAr-Studio-v0.1.10-Setup.exe",
                                         "type":  "installer",
                                         "os":  "windows-x64"
                                     },
                       "portable":  {
-                                       "filename":  "CamAr_Studio_0.1.10_Portable.zip",
-                                       "url":  "https://github.com/juacar01/CamArStudio/releases/download/v0.1.10/CamAr_Studio_0.1.10_Portable.zip",
+                                       "filename":  "CamAr-Studio-v0.1.10-Portable.zip",
+                                       "url":  "https://github.com/juacar01/CamArStudio/releases/download/v0.1.10/CamAr-Studio-v0.1.10-Portable.zip",
                                        "type":  "portable",
                                        "os":  "windows-x64"
                                    }
