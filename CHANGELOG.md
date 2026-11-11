@@ -10,11 +10,8 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 * **Pipeline de Seguridad y Watermark Pro:**
   - Integración de marca de agua translúcida oficial con aceleración por hardware en HLSL Direct3D 11 (`u_watermarkActive`, `u_watermarkOpacity`).
   - Sombra suave difusa perimetral y preservación de aspecto en resoluciones 1080p, 1440p (2K) y 4K UHD.
-  - Alternancia en caliente con 0 ms de latencia para pruebas en entorno DEV (`[ DEV ] [ 👁️ Watermark: OCULTO/VISIBLE ]`).
-* **Sistema de Licenciamiento Seguro:**
-  - Generación y verificación de claves criptográficas con firma HMAC-SHA256.
-  - Soporte para licencias mensuales (30 días) y licencias vitalicias permanentes (`CAMAR-20991231-XXXX-XXXX`).
-  - Modal de activación interactivo en la interfaz para usuarios finales.
+* **Licencias:**
+  - Activación de la versión completa desde la interfaz.
 * **Calibración y Filtros Oníricos:**
   - Nuevos LUTs fotométricos procedimentales: *Oni Mist*, *Fairy Tale*, *Champagne*, *Rose Dream* y *Angelic Glow*.
 

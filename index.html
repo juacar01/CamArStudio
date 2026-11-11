@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CamAR Studio · Retoque y maquillaje en vivo para tu cámara</title>
+<meta name="description" content="Cámara virtual para Windows con retoque facial, looks de maquillaje y filtros en tiempo real. Pruébala gratis con marca de agua.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bg:#0b0b0e; --panel:#141418; --line:#26262d; --text:#f3f3f5; --muted:#a4a4af; --teal:#00e5c9; --pink:#ff5c9a; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  a { color:var(--teal); }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+  header { padding:22px 0; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+  header img { height:40px; width:auto; display:block; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:20px; font-size:15px; }
+  nav a:hover { color:var(--text); }
+  .hero { text-align:center; padding:44px 0 32px; }
+  h1 { font-size:clamp(32px,6vw,54px); line-height:1.1; margin:0 0 16px; letter-spacing:-.02em; }
+  .lead { font-size:clamp(17px,2.4vw,20px); color:var(--muted); max-width:640px; margin:0 auto 28px; }
+  .cta { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:13px 26px; border-radius:12px; font-weight:700; text-decoration:none; border:1px solid transparent; }
+  .btn.primary { background:var(--teal); color:#04211d; }
+  .btn.primary:hover { filter:brightness(1.08); }
+  .btn.ghost { border-color:var(--line); color:var(--text); }
+  .btn.ghost:hover { border-color:var(--muted); }
+  .btn.off { border-color:var(--line); color:var(--muted); cursor:default; }
+  .note { color:var(--muted); font-size:14px; margin-top:12px; }
+  .shot { display:block; width:100%; height:auto; border-radius:14px; border:1px solid var(--line); margin:26px 0 0; }
+  section { padding:50px 0 0; }
+  h2 { font-size:clamp(24px,4vw,32px); margin:0 0 20px; letter-spacing:-.01em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px; }
+  .card h3 { margin:0 0 6px; font-size:18px; }
+  .card p { margin:0; color:var(--muted); font-size:15px; }
+  .price { font-size:32px; font-weight:800; margin:4px 0 2px; }
+  .price small { font-size:16px; font-weight:500; color:var(--muted); }
+  ol, ul { padding-left:22px; margin:0; }
+  li { margin:6px 0; }
+  .card li { color:var(--muted); font-size:15px; }
+  kbd { background:#23232a; border:1px solid var(--line); border-radius:6px; padding:1px 7px; font:600 14px system-ui; color:var(--text); }
+  details { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin-bottom:10px; }
+  summary { cursor:pointer; font-weight:600; }
+  details p { margin:10px 0 0; color:var(--muted); font-size:15px; }
+  footer { margin-top:60px; padding:26px 0 40px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  footer a { color:var(--muted); }
+  @media (max-width:560px) { nav { display:none; } .btn { width:100%; text-align:center; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/logo_banner.png" alt="CamAR Studio">
+    <nav>
+      <a href="#funciones">Funciones</a>
+      <a href="#precio">Precio</a>
+      <a href="#instalar">Instalar</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Tu mejor versión<br>en cada directo</h1>
+    <p class="lead">Retoque facial, looks de maquillaje y filtros en tiempo real, directamente en tu cámara. Funciona con OBS, TikTok Live Studio, Zoom, Discord y cualquier programa que use una webcam.</p>
+    <div class="cta">
+      <a class="btn primary" id="descargar" href="https://github.com/juacar01/CamArStudio/releases/latest">Descargar gratis</a>
+      <a class="btn off" id="comprar" aria-disabled="true">Suscripción: próximamente</a>
+    </div>
+    <p class="note" id="version">Para Windows 10 y 11 de 64 bits · Prueba gratis con marca de agua</p>
+    <img class="shot" src="assets/app_preview.png" width="1024" height="641" alt="Interfaz de CamAR Studio con la vista previa de la cámara y los controles de retoque">
+  </div>
+
+  <section id="funciones">
+    <h2>Lo que incluye</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Belleza</h3>
+        <ul>
+          <li>Piel natural: suaviza y corrige manchas y ojeras sin perder textura</li>
+          <li>Ajuste de rostro, ojos y labios</li>
+          <li>Pupilentes de varios colores</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Efectos</h3>
+        <ul>
+          <li>12 looks de maquillaje con intensidad ajustable</li>
+          <li>Pestañas en 3D que siguen tu párpado y tu cabeza</li>
+          <li>Filtros de color para darle estilo a tu directo</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Salidas</h3>
+        <ul>
+          <li>Cámara virtual para OBS, TikTok Live Studio, Zoom, Discord y más</li>
+          <li>Spout para enviar el video a OBS y otros programas compatibles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="precio">
+    <h2>Precio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Prueba gratis</h3>
+        <div class="price">COP 0</div>
+        <ul>
+          <li>Todas las funciones</li>
+          <li>Con marca de agua en la imagen</li>
+          <li>Sin registro</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Suscripción</h3>
+        <div class="price">COP 35.000 <small>/ mes</small></div>
+        <ul>
+          <li>Sin marca de agua</li>
+          <li>Licencia para un PC, que puedes cambiar de equipo</li>
+          <li>Cancela cuando quieras</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="instalar">
+    <h2>Instalación</h2>
+    <div class="card">
+      <ol>
+        <li>Descarga el instalador y ábrelo.</li>
+        <li>Windows puede mostrar el aviso <b>«Windows protegió tu PC»</b>, porque el instalador todavía no lleva firma digital. Pulsa <kbd>Más información</kbd> y luego <kbd>Ejecutar de todas formas</kbd>.</li>
+        <li>Deja marcada la opción de la cámara virtual y termina la instalación.</li>
+        <li>Abre CamAR Studio, elige tu cámara y activa la cámara virtual.</li>
+        <li>En OBS, Zoom o el programa que uses, selecciona <b>CamAr Studio Virtual Camera</b>.</li>
+      </ol>
+      <p class="note"><a href="https://github.com/juacar01/CamArStudio/blob/main/docs/INSTALL.md">Guía completa de instalación</a></p>
+    </div>
+  </section>
+
+  <section id="requisitos">
+    <h2>Requisitos</h2>
+    <div class="grid">
+      <div class="card"><h3>Mínimos</h3><ul><li>Windows 10 u 11 de 64 bits</li><li>Intel Core i5 de 7.ª gen o Ryzen 5</li><li>8 GB de RAM</li><li>GPU compatible con DirectX 11</li></ul></div>
+      <div class="card"><h3>Recomendados</h3><ul><li>Intel Core i7 o Ryzen 7</li><li>16 GB de RAM</li><li>NVIDIA RTX 2060 o AMD RX 6600, o superior</li></ul></div>
+    </div>
+  </section>
+
+  <section id="preguntas">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿Es seguro el aviso de Windows?</summary><p>Aparece con los programas que aún no tienen firma digital. Descarga CamAR Studio solo desde esta página para asegurarte de tener el archivo original.</p></details>
+    <details><summary>¿Puedo cambiar de PC?</summary><p>Sí. Desvincula la licencia en el PC actual desde la ventana de activación y úsala en el nuevo. Hace falta conexión a internet para ese paso.</p></details>
+    <details><summary>¿Necesito internet todo el tiempo?</summary><p>No. La suscripción se verifica una vez al día si hay conexión, y sigue funcionando hasta 14 días sin internet.</p></details>
+    <details><summary>¿Qué pasa si cancelo?</summary><p>CamAR Studio sigue funcionando con marca de agua cuando termine el periodo pagado. Si renuevas, se reactiva sola.</p></details>
+  </section>
+
+  <footer>
+    © 2026 CamAR Studio. Todos los derechos reservados. ·
+    <a href="https://github.com/juacar01/CamArStudio/blob/main/CHANGELOG.md">Novedades</a> ·
+    <a href="https://github.com/juacar01/CamArStudio/releases">Versiones</a>
+  </footer>
+</div>
+<script>
+  // Dirección de compra: se rellena cuando la tienda esté aprobada
+  const COMPRAR_URL = '';
+  if (COMPRAR_URL) {
+    const b = document.getElementById('comprar');
+    b.href = COMPRAR_URL;
+    b.textContent = 'Comprar suscripción';
+    b.className = 'btn ghost';
+    b.removeAttribute('aria-disabled');
+  }
+  // La descarga y la versión salen de latest.json: publicar una versión nueva solo cambia ese archivo
+  fetch('latest.json', { cache: 'no-store' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((d) => {
+      if (!d) return;
+      if (d.downloads && d.downloads.installer && d.downloads.installer.url) {
+        document.getElementById('descargar').href = d.downloads.installer.url;
+      }
+      if (d.version) {
+        document.getElementById('version').textContent =
+          'Versión ' + d.version + ' · Windows 10 y 11 de 64 bits · Prueba gratis con marca de agua';
+      }
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>
