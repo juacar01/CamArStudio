@@ -14,7 +14,7 @@
 ---
 
 <div align="center">
-  <img src="assets/app_preview.png" alt="Interfaz de CamAR Studio" width="900" />
+  <img src="assets/antes_despues.jpg" alt="Antes y después con looks de CamAR Studio" width="900" />
 </div>
 
 ## Qué es
