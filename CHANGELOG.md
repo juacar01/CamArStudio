@@ -4,11 +4,18 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.13] — 2026-11-12
+
+* La marca de agua solo aparece sin licencia. La prueba gratis incluye todo lo del plan Básico.
+* Looks, efectos y ambiente son del plan Streamer, que llegará pronto: por ahora se ven con candado pero no se pueden usar.
+
+---
+
 ## [v0.1.12] — 2026-11-12
 
 ### Planes
 * Planes **Básico** y **Streamer**, con licencia de Lemon Squeezy. La clave de tu plan se activa desde la ventana de licencia.
-* Con el plan Básico puedes probar looks y efectos: la imagen lleva marca de agua mientras estén activos.
+* La prueba gratis incluye todo lo del plan Básico, con marca de agua. El plan Streamer (looks y efectos) llegará pronto.
 
 ### Interfaz
 * Diseño renovado con la paleta de la marca: cabecera más limpia, secciones plegables con reinicio y textos sin jerga técnica.
