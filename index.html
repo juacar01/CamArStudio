@@ -200,11 +200,27 @@
   </footer>
 </div>
 <script>
-  // Enlaces de compra de Lemon Squeezy, uno por plan. Vacío = el botón no se muestra.
-  const COMPRAR = { basico: '', streamer: '' };
+  // Enlaces de compra de Lemon Squeezy, uno por plan.
+  const COMPRAR = {
+    basico: 'https://juacar01.lemonsqueezy.com/checkout/buy/cee7ea76-0944-4127-aa8b-77e0a0160b6a',
+    streamer: 'https://juacar01.lemonsqueezy.com/checkout/buy/70362d18-9261-4036-aff6-dcc54e3d1bc3',
+  };
+  // Poner en true cuando esté publicado el instalador que reconoce los planes (el 0.1.10 no los
+  // conoce y rechazaría las claves del Básico).
+  const VENTA_ABIERTA = false;
+  // El plan Streamer sigue en desarrollo: su tarjeta muestra «Próximamente».
+  const STREAMER_DISPONIBLE = false;
   for (const [plan, url] of Object.entries(COMPRAR)) {
     const b = document.getElementById('comprar-' + plan);
-    if (url && b) { b.href = url; b.hidden = false; }
+    if (!b) continue;
+    if (plan === 'streamer' && !STREAMER_DISPONIBLE) {
+      b.textContent = 'Próximamente';
+      b.className = 'btn off';
+      b.hidden = false;
+    } else if (VENTA_ABIERTA && url) {
+      b.href = url;
+      b.hidden = false;
+    }
   }
   // La descarga y la versión salen de latest.json: publicar una versión nueva solo cambia ese archivo
   fetch('latest.json', { cache: 'no-store' })
