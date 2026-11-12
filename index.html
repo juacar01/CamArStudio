@@ -45,6 +45,12 @@
   .card p { margin:0; color:var(--muted); font-size:15px; }
   .price { font-size:32px; font-weight:700; margin:4px 0 8px; }
   .price small { font-size:16px; font-weight:500; color:var(--muted); }
+  .plans .card { display:flex; flex-direction:column; }
+  .plans ul { flex:1; margin-bottom:16px; }
+  .plan-for { color:var(--dim) !important; font-size:14px !important; margin:0 0 12px !important; }
+  .btn.buy-plan { border-color:var(--cyan); color:var(--cyan); text-align:center; }
+  .btn.buy-plan:hover { background:rgba(56,201,224,.1); }
+  .plans .btn { text-align:center; }
   ol, ul { padding-left:22px; margin:0; }
   li { margin:6px 0; }
   .card li { color:var(--muted); font-size:15px; }
@@ -67,7 +73,7 @@
     <img src="assets/logo_banner.png" alt="CamAR Studio">
     <nav>
       <a href="#funciones">Funciones</a>
-      <a href="#precio">Precio</a>
+      <a href="#precio">Planes</a>
       <a href="#instalar">Instalar</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
@@ -78,7 +84,7 @@
     <p class="lead">Retoque facial, looks de maquillaje y filtros en tiempo real, directamente en tu cámara. Funciona con OBS, TikTok Live Studio, Zoom, Discord y cualquier programa que use una webcam.</p>
     <div class="cta">
       <a class="btn primary" id="descargar" href="https://github.com/juacar01/CamArStudio/releases/latest">Descargar gratis</a>
-      <a class="btn off" id="comprar" aria-disabled="true">Suscripción: próximamente</a>
+      <a class="btn buy" href="#precio">Ver planes</a>
     </div>
     <p class="note" id="version">Para Windows 10 y 11 de 64 bits · Prueba gratis con marca de agua</p>
     <img class="shot" src="assets/antes_despues.jpg" width="1580" height="584" alt="La misma cara sin maquillaje y con los looks Foxy Latina Glam y Golden Fuchsia aplicados en CamAR Studio">
@@ -114,27 +120,45 @@
   </section>
 
   <section id="precio">
-    <h2>Precio</h2>
-    <div class="grid">
+    <h2>Planes</h2>
+    <div class="grid plans">
       <div class="card">
         <h3>Prueba gratis</h3>
         <div class="price">COP 0</div>
+        <p class="plan-for">Para probarlo todo antes de decidir</p>
         <ul>
           <li>Todas las funciones</li>
           <li>Con marca de agua en la imagen</li>
           <li>Sin registro</li>
         </ul>
       </div>
-      <div class="card featured">
-        <h3>Suscripción</h3>
-        <div class="price">COP 35.000 <small>/ mes</small></div>
+      <div class="card">
+        <h3>Básico</h3>
+        <div class="price">COP 18.900 <small>/ mes</small></div>
+        <p class="plan-for">Para videollamadas, clases y directos sencillos</p>
         <ul>
+          <li>Retoque natural de piel y rostro</li>
+          <li>Maquillaje a tu gusto: labial, sombras, pestañas, cejas y pupilentes</li>
+          <li>Filtros de color y fondo desenfocado o pantalla verde</li>
+          <li>Cámara virtual, Spout para OBS y formato vertical 9:16</li>
           <li>Sin marca de agua</li>
-          <li>Licencia para un PC, que puedes cambiar de equipo</li>
-          <li>Cancela cuando quieras</li>
         </ul>
+        <a class="btn buy-plan" id="comprar-basico" hidden>Comprar Básico</a>
+      </div>
+      <div class="card featured">
+        <h3>Streamer</h3>
+        <div class="price">COP 35.000 <small>/ mes</small></div>
+        <p class="plan-for">Para streamers que quieren estilo y espectáculo</p>
+        <ul>
+          <li>Todo lo del plan Básico</li>
+          <li>Looks de maquillaje completos con un clic</li>
+          <li>Efectos en el rostro y ambientes animados</li>
+          <li>Sin marca de agua</li>
+        </ul>
+        <a class="btn buy" id="comprar-streamer" hidden>Comprar Streamer</a>
       </div>
     </div>
+    <p class="note">Licencia para un PC, que puedes pasar a otro equipo. Cancela cuando quieras. Con el plan Básico puedes probar los looks y efectos, con marca de agua mientras los uses.</p>
   </section>
 
   <section id="instalar">
@@ -163,6 +187,8 @@
     <h2>Preguntas frecuentes</h2>
     <details><summary>¿Es seguro el aviso de Windows?</summary><p>Aparece con los programas que aún no tienen firma digital. Descarga CamAR Studio solo desde esta página para asegurarte de tener el archivo original.</p></details>
     <details><summary>¿Puedo cambiar de PC?</summary><p>Sí. Desvincula la licencia en el PC actual desde la ventana de activación y úsala en el nuevo. Hace falta conexión a internet para ese paso.</p></details>
+    <details><summary>¿Qué plan me conviene?</summary><p>Si usas la cámara para videollamadas, clases o directos donde solo quieres verte bien, el Básico tiene todo lo necesario, incluida la salida a OBS y el formato vertical. Si quieres looks completos y efectos para tus directos, elige Streamer. Puedes probar los dos gratis con marca de agua.</p></details>
+    <details><summary>¿Puedo cambiar de plan?</summary><p>Sí. Compra el plan nuevo y activa su clave en CamAR Studio desde la ventana de licencia. Después cancela el anterior desde el enlace del correo de tu compra.</p></details>
     <details><summary>¿Necesito internet todo el tiempo?</summary><p>No. La suscripción se verifica una vez al día si hay conexión, y sigue funcionando hasta 14 días sin internet.</p></details>
     <details><summary>¿Qué pasa si cancelo?</summary><p>CamAR Studio sigue funcionando con marca de agua cuando termine el periodo pagado. Si renuevas, se reactiva sola.</p></details>
   </section>
@@ -174,14 +200,11 @@
   </footer>
 </div>
 <script>
-  // Dirección de compra: se rellena cuando la tienda esté aprobada
-  const COMPRAR_URL = '';
-  if (COMPRAR_URL) {
-    const b = document.getElementById('comprar');
-    b.href = COMPRAR_URL;
-    b.textContent = 'Comprar suscripción';
-    b.className = 'btn buy';
-    b.removeAttribute('aria-disabled');
+  // Enlaces de compra de Lemon Squeezy, uno por plan. Vacío = el botón no se muestra.
+  const COMPRAR = { basico: '', streamer: '' };
+  for (const [plan, url] of Object.entries(COMPRAR)) {
+    const b = document.getElementById('comprar-' + plan);
+    if (url && b) { b.href = url; b.hidden = false; }
   }
   // La descarga y la versión salen de latest.json: publicar una versión nueva solo cambia ese archivo
   fetch('latest.json', { cache: 'no-store' })
