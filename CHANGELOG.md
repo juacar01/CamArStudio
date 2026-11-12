@@ -4,6 +4,18 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.14] — 2026-11-12
+
+### Correcciones
+- Corregido un error al abrir la app instalada en «Archivos de programa»: ya no aparece «Acceso denegado» al arrancar. Los datos de la ventana ahora se guardan en tu carpeta de usuario.
+
+### Instalación
+Descarga `CamAr-Studio-v0.1.14-Setup.exe` y ábrelo. Windows puede mostrar «Windows protegió tu PC» porque el instalador aún no lleva firma digital: pulsa **Más información** y luego **Ejecutar de todas formas**.
+
+Requisitos: Windows 10 u 11 de 64 bits y GPU compatible con DirectX 11.
+
+---
+
 ## [v0.1.13] — 2026-11-12
 
 * La marca de agua solo aparece sin licencia. La prueba gratis incluye todo lo del plan Básico.
