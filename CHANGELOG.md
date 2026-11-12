@@ -4,6 +4,25 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.12] — 2026-11-12
+
+### Planes
+* Planes **Básico** y **Streamer**, con licencia de Lemon Squeezy. La clave de tu plan se activa desde la ventana de licencia.
+* Con el plan Básico puedes probar looks y efectos: la imagen lleva marca de agua mientras estén activos.
+
+### Interfaz
+* Diseño renovado con la paleta de la marca: cabecera más limpia, secciones plegables con reinicio y textos sin jerga técnica.
+* La configuración muestra los datos reales de tu equipo.
+
+### Maquillaje
+* Looks instalables con doble clic (`.camarlook`) y biblioteca para verlos y borrarlos.
+* Pestañas 3D y delineado sobre el borde real del párpado, adaptados a la nitidez y el grano de tu cámara.
+
+### Salidas
+* Cámara virtual propia («CamAr Studio Virtual Camera»), Spout2 y formato vertical 9:16.
+
+---
+
 ## [v0.1.10-beta] — 2026-10-31
 
 ### 🚀 Novedades y Características Principales

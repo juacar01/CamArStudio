@@ -1,21 +1,19 @@
 {
-  "version": "0.1.10",
-  "channel": "beta",
-  "release_tag": "v0.1.10-beta",
-  "release_date": "2026-10-31",
-  "name": "CamAr Studio v0.1.10-beta",
+  "version": "0.1.12",
+  "channel": "stable",
+  "release_tag": "v0.1.12",
+  "release_date": "2026-11-12",
+  "name": "CamAR Studio v0.1.12",
   "downloads": {
     "installer": {
-      "filename": "CamAr-Studio-v0.1.10-beta-Setup.exe",
-      "url": "https://mega.nz/file/edw20DAK#Hel9sZI2ronaLTrwm7VHq4hXUoH7kYvznh_2CcBsyRg",
-      "mirror_mega": "https://mega.nz/file/edw20DAK#Hel9sZI2ronaLTrwm7VHq4hXUoH7kYvznh_2CcBsyRg",
+      "filename": "CamAr-Studio-v0.1.12-Setup.exe",
+      "url": "https://github.com/juacar01/CamArStudio/releases/download/v0.1.12/CamAr-Studio-v0.1.12-Setup.exe",
       "type": "installer",
       "os": "windows-x64"
     },
     "portable": {
-      "filename": "CamAr-Studio-v0.1.10-beta-Portable.zip",
-      "url": "https://mega.nz/file/mE5GVJwZ#fsqJ4LCwYs7g7mh6bqYq2UeYGFrUxgn3BqUQwKUzhxg",
-      "mirror_mega": "https://mega.nz/file/mE5GVJwZ#fsqJ4LCwYs7g7mh6bqYq2UeYGFrUxgn3BqUQwKUzhxg",
+      "filename": "CamAr-Studio-v0.1.12-Portable.zip",
+      "url": "https://github.com/juacar01/CamArStudio/releases/download/v0.1.12/CamAr-Studio-v0.1.12-Portable.zip",
       "type": "portable",
       "os": "windows-x64"
     }
@@ -26,11 +24,10 @@
     "ram": "8 GB RAM recomendado"
   },
   "highlights_es": [
-    "Motor de procesamiento GPU Direct3D 11 optimizado a 60 FPS con latencia inferior a 3 ms.",
-    "Pipeline de seguridad con marca de agua transparente de alta resolución y validación de licencias.",
-    "Retoque facial en vivo: base anatómica persistente, escultura, unificación de tono y suavizado de piel.",
-    "Efectos AR: lentes de contacto dinámicas, sombras de ojos, maquillaje 3D y simulación de barba/visagismo.",
-    "Filtros cromáticos estilizados (Vívido, Onírico, Editorial, Clásico) con gamut extendido.",
-    "Cámara Virtual compatible con OBS Studio, Discord, Zoom, Microsoft Teams y Google Meet."
+    "Planes Básico y Streamer: activa la clave de tu plan desde la ventana de licencia.",
+    "Interfaz renovada: más clara, con secciones plegables y reinicio por sección.",
+    "Looks de maquillaje instalables con doble clic y biblioteca para verlos y borrarlos.",
+    "Pestañas 3D y delineado sobre el borde real del párpado, adaptados al grano de tu cámara.",
+    "Cámara virtual propia, Spout2 para OBS y formato vertical 9:16."
   ]
 }
