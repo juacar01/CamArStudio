@@ -4,6 +4,33 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.15] — 2026-11-24
+
+### Novedades
+- **Retoque automático:** un solo deslizador ajusta el retoque por ti. Si mueves cualquier ajuste a mano, pasa a «Personalizado».
+- **Tono de piel:** elige piel clara, media u oscura y CamAR te sugiere la base adecuada.
+- **Croma y pantalla verde:** quita el fondo de una tela verde o azul, con transparencia hacia OBS.
+- **Aviso de luz:** CamAR te avisa si hay poca luz o contraluz y puede dar una luz suave a tu cara.
+- **Rendimiento a tu medida:** la primera vez que abres la app mide tu equipo y elige el perfil de calidad. Puedes cambiar entre Calidad máxima, Equilibrado y Fluidez sin reiniciar, y la app te avisa cuando baja la calidad para no perder fluidez.
+- **Orientación automática de la cámara:** si tienes la cámara girada o en vertical, CamAR detecta tu cara y pone la imagen derecha sola.
+
+### Mejoras
+- El retoque respeta el pelo, las cejas y la barba, y ya no deja rastro al moverte.
+- El maquillaje sigue mejor la cara en movimientos rápidos.
+- Puedes ajustar la intensidad y el color de cada capa del look que tengas puesto.
+- Los filtros de color se ven más fieles, y el contraste y la saturación ya no queman las luces ni las sombras.
+- Mejor reducción de ruido con poca luz, sobre todo en los tonos medios y en las manchas de color.
+- La vista previa es más fluida y se apaga sola al minimizar la ventana, para ahorrar recursos.
+- El recorte del fondo es más estable y no se retrasa respecto a ti.
+- Los colores coinciden en todos los formatos de cámara.
+
+### Instalación
+Descarga `CamAr-Studio-v0.1.15-Setup.exe` y ábrelo. Windows puede mostrar «Windows protegió tu PC» porque el instalador aún no lleva firma digital: pulsa **Más información** y luego **Ejecutar de todas formas**.
+
+Requisitos: Windows 10 u 11 de 64 bits y GPU compatible con DirectX 11.
+
+---
+
 ## [v0.1.14] — 2026-11-12
 
 ### Correcciones
