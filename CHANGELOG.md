@@ -4,6 +4,29 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.16] — 2026-11-24
+
+### Novedades
+- **Desenfoque en movimiento rápido (opcional):** en Ajustes puedes activar un desenfoque suave de toda la imagen cuando te mueves muy rápido, para que no se note el seguimiento de la cara. Viene apagado; ajusta la sensibilidad y la fuerza a tu gusto.
+
+### Mejoras
+- El retoque ya no alisa el vello de la barba y conserva un mínimo de textura natural en la piel.
+- La nitidez se aplica solo al detalle (ojos, cejas, pelo) y no a la piel retocada.
+- El color de piel se mide en la frente y las mejillas, sin la barba, para que la base quede más natural.
+- Mejor detección de la cara con poca luz y a contraluz.
+- Menor uso de procesador en el seguimiento facial.
+- La orientación automática de la cámara es más fiable y ya no se confunde con giros de cabeza.
+- El blanqueo de dientes es más estable al hablar.
+- Mejor tratamiento de la piel oscura en zonas de sombra.
+- Si el seguimiento se pierde un instante, el retoque no se queda desplazado sobre la imagen.
+
+### Instalación
+Descarga `CamAr-Studio-v0.1.16-Setup.exe` y ábrelo. Windows puede mostrar «Windows protegió tu PC» porque el instalador aún no lleva firma digital: pulsa **Más información** y luego **Ejecutar de todas formas**.
+
+Requisitos: Windows 10 u 11 de 64 bits y GPU compatible con DirectX 11.
+
+---
+
 ## [v0.1.15] — 2026-11-24
 
 ### Novedades
