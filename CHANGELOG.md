@@ -4,6 +4,18 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.18] — 2026-11-25
+
+### Correcciones
+- **El retoque y el maquillaje ya no se pierden al inclinar la cabeza.** Si apoyabas la cabeza de lado unos segundos, la app dejaba de ver tu cara y a veces giraba la imagen por error. Ahora sigue tu cara aunque la inclines mucho, y la orientación de la cámara solo se vuelve a comprobar si sales de la imagen un rato.
+
+### Instalación
+Descarga `CamAr-Studio-v0.1.18-Setup.exe` y ábrelo. Windows puede mostrar «Windows protegió tu PC» porque el instalador aún no lleva firma digital: pulsa **Más información** y luego **Ejecutar de todas formas**.
+
+Requisitos: Windows 10 u 11 de 64 bits y GPU compatible con DirectX 11.
+
+---
+
 ## [v0.1.17] — 2026-11-25
 
 ### Novedades
