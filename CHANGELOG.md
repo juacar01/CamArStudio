@@ -4,6 +4,37 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.17] — 2026-11-25
+
+### Novedades
+- **Quitar brillo:** apaga los reflejos de la frente y la nariz sin dejar la piel mate. En Mejorar → Apariencia.
+- **Claridad de imagen:** da definición a cejas, ojos, labios, pelo y ropa sin endurecer la piel ni dejar halos en los bordes. En Mejorar → Apariencia.
+- **60 fps:** si tu cámara los ofrece, ya puedes elegirlos en la lista de formatos (antes solo aparecía 30).
+- **Desenfoque en movimiento como el de una cámara:** cuando te mueves rápido, solo tú te desenfocas, en la dirección del movimiento; el fondo y los objetos quietos siguen nítidos. Viene apagado.
+
+### Mejoras
+- **Imagen más nítida:** la reducción de ruido ya solo actúa cuando tu cámara tiene grano (con poca luz). Con buena luz conserva todo el detalle de barba, pelo y ropa.
+- **Ruido de color:** si tu cámara hace manchas de color con poca luz, se limpian sin perder detalle.
+- **Luz IA más natural:** aclara las sombras sin lavar la imagen ni quitar nitidez.
+- **Más definición en ojos, cejas y barba.**
+- **Suavizar arrugas** actúa ahora también bajo los ojos y en las patas de gallo; **Reducir bolsas** y **Reducir ojeras** cubren toda la zona de debajo del ojo.
+- **Corrector:** quita también manchas y rojeces más grandes que un grano, sin borrar la textura de la piel.
+- **Redondear ojos** funciona con cualquier forma de ojo (antes solo con «Doe»).
+- Menor uso del procesador con cámaras YUY2 y MJPEG, y seguimiento de la cara más rápido.
+
+### Correcciones
+- Con algunas cámaras (por ejemplo, Elgato Facecam en vertical) el retoque y el maquillaje se dibujaban fuera de la cara.
+- La imagen salía más clara y lavada que la de la cámara.
+- El surco entre la nariz y la boca ya no aclara la sombra de la nariz.
+- Se retira el «Ajuste automático del color», que estropeaba la imagen.
+
+### Instalación
+Descarga `CamAr-Studio-v0.1.17-Setup.exe` y ábrelo. Windows puede mostrar «Windows protegió tu PC» porque el instalador aún no lleva firma digital: pulsa **Más información** y luego **Ejecutar de todas formas**.
+
+Requisitos: Windows 10 u 11 de 64 bits y GPU compatible con DirectX 11.
+
+---
+
 ## [v0.1.16] — 2026-11-24
 
 ### Novedades
