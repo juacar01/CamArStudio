@@ -4,6 +4,18 @@ Todas las versiones notables, mejoras de rendimiento y correcciones de este proy
 
 ---
 
+## [v0.1.19] — 2026-11-26
+
+### Mejoras
+- **Menor consumo de CPU y GPU durante el retoque.** Se ha optimizado el seguimiento facial y la protección del cabello al suavizar la piel para que la aplicación utilice mucha menos tarjeta gráfica y procesador, especialmente con cámaras a 60 FPS o al transmitir junto a OBS Studio.
+
+### Instalación
+Descarga `CamAr-Studio-v0.1.19-Setup.exe` y ábrelo. Windows puede mostrar «Windows protegió tu PC» porque el instalador aún no lleva firma digital: pulsa **Más información** y luego **Ejecutar de todas formas**.
+
+Requisitos: Windows 10 u 11 de 64 bits y GPU compatible con DirectX 11.
+
+---
+
 ## [v0.1.18] — 2026-11-25
 
 ### Correcciones
